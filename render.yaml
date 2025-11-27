@@ -1,0 +1,13 @@
+
+services:
+  - type: web
+    name: telegram-wallpaper-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        value: "YOUR_BOT_TOKEN"
+      - key: API_KEY
+        value: "YOUR_PIXABAY_API_KEY"
